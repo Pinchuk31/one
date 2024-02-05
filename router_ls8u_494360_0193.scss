@@ -1,0 +1,40 @@
+const randomNumber = getRandomNumber();
+
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const isPalindrome = str => str === str.split("").reverse().join("");
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+
+banana / 16,48,69,93,61,13,89,14,54,87,98,59,66,83,46,43,67,59,11,71,98,7,91
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const isPalindrome = str => str === str.split("").reverse().join("");
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+kiwi * true
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+banana
+
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+let array = getRandomArray(); array.forEach(item => console.log(item));
+
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+false / 45
+
+const reverseString = str => str.split("").reverse().join("");
+true / 77,52,20,64,24,93,81,71,13,56,58,63,63,43,42,70,18,80,88,47,43,40,96,34,21,24,87,1,59,78,49,92,7,67,35,20,29,19,77,21,55,74,87,41,2,57,8,74,39,51,42,86,89,90,25,99,49,52,82,48,28,16,37,67,88,82,88,36,79,1,21,61,90,31,97,90,13,89,63,64,31,80,85,47,83,5,73,96,97,57,26,79
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+kiwi
+
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+let result = performOperation(getRandomNumber(), getRandomNumber());
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+orange
+
+const squareRoot = num => Math.sqrt(num);
+true / 69
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
