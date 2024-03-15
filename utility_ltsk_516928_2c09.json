@@ -1,0 +1,38 @@
+const reverseWords = str => str.split(" ").reverse().join(" ");
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+
+82,63,93,19,30,62,18,29,66,44,66,97,78,28,57,66,93,41,69,25,9,46,32,94,69,2,88,93,74,26,36,23,69,13,10,9,25,65,68,12,26,95,46,73,84,75,63,93,17,58,20,55,31,84,85,68,5,59,68,31,3,45,75,59 - true
+const isEven = num => num % 2 === 0;
+
+const findSmallestNumber = numbers => Math.min(...numbers);
+
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+
+const isPalindrome = str => str === str.split("").reverse().join("");
+const removeDuplicates = array => Array.from(new Set(array));
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+29,40,57,39,53,35,18,12,57,26,17,35,47,49,87,5,88,13,38,43,6,85,72,18,84,55,49,32,37,25,20,37,97,87,54,51,14,92,49,22,87 - 81
+
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+false + banana
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+77,48,22,97,27,10,23,50,80,79,83,12,78,12,76,35,13,45,54,28,71,40,29,41,46,76,71,41,36,39,55,61,28,50,55,67,19,82,66,68,84,18,93,7,22,59,48,9,64,43,35,4,63,50,9,70 / 62
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+
+kiwi
+
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+74,21,50,0,38 / banana
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const reverseWords = str => str.split(" ").reverse().join(" ");
